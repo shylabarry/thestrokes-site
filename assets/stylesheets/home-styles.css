@@ -1,0 +1,26 @@
+html {
+  background: url(../images/home1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.center-nav{
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  font-size: 24pt;
+  justify-content: center;
+  padding: 260px;
+  padding-top: 330px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	color: red;
+	text-decoration: none;
+}

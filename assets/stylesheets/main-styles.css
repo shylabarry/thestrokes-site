@@ -1,5 +1,5 @@
 body{
-  font-family: font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .box{
@@ -85,4 +85,24 @@ tr:nth-child(even) {
 .table-headers{
   font-family: 'Julius Sans One', sans-serif;
   color: red;
+}
+
+/* Media Page */
+.photo-slide{
+  height: 250px;
+  padding: 30px;
+  padding-left: 80px;
+}
+
+.videos{
+  padding-top: 60px;
+}
+.video-slide{
+  height: 250px;
+  padding: 30px;
+  padding-left: 80px;
+}
+
+h3{
+  padding-left: 80px;
 }
