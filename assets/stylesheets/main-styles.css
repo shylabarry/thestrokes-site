@@ -1,6 +1,6 @@
 body{
   font-family: 'Open Sans', sans-serif;
-  background-color: #FEFAFF;
+  background-color: black;
 }
 
 .box{
@@ -28,7 +28,7 @@ hr{
 
 nav{
   font-family: 'Julius Sans One', sans-serif;
-  color: black;
+  color: white;
 	text-align: center;
 	font-size: 20pt;
 	flex-direction: row;
@@ -39,7 +39,7 @@ nav{
 }
 
 a{
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
@@ -71,6 +71,19 @@ h4{
   height: 400px;
 }
 
+p{
+  color: white;
+}
+
+.quick-facts{
+  color: white;
+}
+
+.facts{
+  align-content: center;
+}
+
+
 
 /* Tour Dates */
 table {
@@ -82,6 +95,7 @@ table {
 td, th {
     text-align: left;
     padding-bottom: 20px;
+    color: white;
 }
 
 tr:nth-child(even) {
@@ -98,6 +112,7 @@ tr:nth-child(even) {
 
 .date {
   padding-right: 50px;
+  padding-left: 20px;
 }
 
 .buy-ticket{
@@ -114,6 +129,7 @@ tr:nth-child(even) {
   font-family:'open sans', sans-serif;
   font-weight: bold;
   font-size: 20px;
+  color: white;
 }
 
 
@@ -153,7 +169,7 @@ h2{
   width: 275px;
   height: 275px;
   border-radius: 8px;
-  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 45px 100px rgba(5, 0, 0, 0.4);
   transition: all .3s ease-in-out;
 }
 
@@ -163,12 +179,14 @@ ul.album-details{
   padding: 20px;
   padding-right: 50px;
   list-style: none;
+  color: white;
 }
 
 .album-title{
   margin: 0;
   font-size: 36px;
   font-weight: 700;
+  color: red;
 }
 
 ul.track-listings{
@@ -194,6 +212,7 @@ ul-track-listings > li > .track-time {
 }
 
 
+
 /* Merch Page */
 .container {
     overflow: hidden;
@@ -201,7 +220,7 @@ ul-track-listings > li > .track-time {
 
 .filterDiv {
     float: left;
-    color: #ffffff;
+    color: red;
     width: 250px;
     line-height: 250px;
     text-align: center;
@@ -213,10 +232,13 @@ ul-track-listings > li > .track-time {
     display: block;
 }
 
-.myBtnContainer {
-  width: 100%;
-}
-
 .filterDiv:hover {
   cursor: not-allowed;
 }
+
+/* .shopnav{
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 0.5;
+} */
