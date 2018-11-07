@@ -27,7 +27,7 @@
       <img class="social-icons" src="assets/images/youtube.png" />
     </a>
   </div>
-
+<hr />
   <nav>
     <a href="about-page.html">About &nbsp &nbsp &nbsp |  &nbsp &nbsp &nbsp</a>
     <a href="discography-page.html">Discography &nbsp &nbsp &nbsp |  &nbsp &nbsp &nbsp</a>
@@ -35,6 +35,86 @@
     <a class="active" href="merch-main-page.html">Merch &nbsp &nbsp &nbsp |  &nbsp &nbsp &nbsp</a>
     <a href="tour-dates-page.html">Tour Dates</a>
   </nav>
+
+  <!-- Filter Control Buttons -->
+  <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> <h1>SHOP ALL</h1></button>
+        <button class="btn" onclick="filterSelection('tshirts')"> <h1>TSHIRTS</h1></button>
+        <button class="btn" onclick="filterSelection('posters')"> <h1>POSTERS</h1></button>
+        <button class="btn" onclick="filterSelection('accessories')"> <h1>ACCESSORIES</h1></button>
+  </div>
+
+<!-- The filterable elements - MERCHANDISE PHOTOS -->
+  <div class="container">
+    <div class="filterDiv tshirts"><img src="./assets/images/merch/tshirt-1.jpg" /></div>
+    <div class="filterDiv tshirts"><img src="./assets/images/merch/tshirt-2.jpg" /></div>
+    <div class="filterDiv tshirts"><img src="./assets/images/merch/tshirt-3.jpg" /></div>
+    <div class="filterDiv tshirts"><img src="./assets/images/merch/tshirt-4.jpg" /></div>
+    <div class="filterDiv tshirts"><img src="./assets/images/merch/tshirt-5.jpg" /></div>
+    <div class="filterDiv posters"><img src="./assets/images/merch/poster-1.jpg" /></div>
+    <div class="filterDiv posters"><img src="./assets/images/merch/poster-2.jpg" /></div>
+    <div class="filterDiv posters"><img src="./assets/images/merch/poster-3.jpg" /></div>
+    <div class="filterDiv posters"><img src="./assets/images/merch/poster-4.jpg" /></div>
+    <div class="filterDiv posters"><img src="./assets/images/merch/poster-5.jpg" /></div>
+    <div class="filterDiv accessories"><img src="./assets/images/merch/accessories-1.jpg" /></div>
+    <div class="filterDiv accessories"><img src="./assets/images/merch/accessories-2.jpg" /></div>
+    <div class="filterDiv accessories"><img src="./assets/images/merch/accessories-3.jpg" /></div>
+    <div class="filterDiv accessories"><img src="./assets/images/merch/accessories-4.jpg" /></div>
+  </div>
+
+
+
+
+  <script>
+      filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  // Add active class to the current control button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+    </script>
+  <script src="./assets/javascripts/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
 
 </body>
 

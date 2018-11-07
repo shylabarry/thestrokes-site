@@ -1,34 +1,41 @@
 body{
   font-family: 'Open Sans', sans-serif;
+  background-color: #FEFAFF;
 }
 
 .box{
   width:100%;
   height: 100px;
   outline-color: red;
+  padding-top: 5px;
+}
+
+hr{
+  border-color: red;
 }
 
 .logo{
   max-height: 60px;
   float: right;
-  padding: 15px;
+  padding-right: 15px;
 }
 .social-icons{
   max-height: 45px;
   float: left;
-  padding: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
 }
 
 nav{
   font-family: 'Julius Sans One', sans-serif;
   color: black;
 	text-align: center;
-	font-size: 18pt;
+	font-size: 20pt;
 	flex-direction: row;
 	width: 100%;
 	margin: 0 auto;
-  padding-top: 20px;
-	padding-bottom: 50px;
+  padding-top: 30px;
+	padding-bottom: 100px;
 }
 
 a{
@@ -64,28 +71,52 @@ h4{
   height: 400px;
 }
 
+
 /* Tour Dates */
 table {
-    font-family: open sans, sans-serif;
-    border-collapse: collapse;
+    font-family: 'open sans', sans-serif;
+    border-spacing: 0 15px;
     width: 100%;
-
 }
 
 td, th {
-    border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding-bottom: 20px;
 }
 
 tr:nth-child(even) {
     background-color: red;
+    color: white;
+    padding-top: 10px;
 }
 
 .table-headers{
+  font-size: 18pt;
   font-family: 'Julius Sans One', sans-serif;
   color: red;
 }
+
+.date {
+  padding-right: 50px;
+}
+
+.buy-ticket{
+  font-size: 16pt;
+  padding-left: 10px;
+}
+
+.mailing-list{
+  width: 320px;
+  text-align: center;
+  border: 5px solid red;
+  margin: auto;
+  margin-top: 25px;
+  font-family:'open sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
 
 /* Media Page */
 .photo-slide{
@@ -98,11 +129,94 @@ tr:nth-child(even) {
   padding-top: 60px;
 }
 .video-slide{
-  height: 250px;
   padding: 30px;
   padding-left: 80px;
 }
 
-h3{
+h2{
+  font-family: 'Julius Sans One', sans-serif;
   padding-left: 80px;
+  color: red;
+}
+
+
+/* Discography Page */
+.album{
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top:100px
+}
+
+.album-cover{
+  width: 275px;
+  height: 275px;
+  border-radius: 8px;
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  transition: all .3s ease-in-out;
+}
+
+ul.album-details{
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+  padding-right: 50px;
+  list-style: none;
+}
+
+.album-title{
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+ul.track-listings{
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+ul.track-listings > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+span.track-number {
+  margin-right: 10px;
+}
+
+ul-track-listings > li > .track-time {
+  text-align: right;
+}
+
+
+/* Merch Page */
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    float: left;
+    color: #ffffff;
+    width: 250px;
+    line-height: 250px;
+    text-align: center;
+    margin: 25px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.myBtnContainer {
+  width: 100%;
+}
+
+.filterDiv:hover {
+  cursor: not-allowed;
 }
