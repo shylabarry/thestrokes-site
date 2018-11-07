@@ -67,20 +67,39 @@ h4{
 }
 
 .secondary-image{
-  float: right;
-  height: 400px;
+  float: left;
+  height: 200px;
+  margin-left: 15%;
+  padding-bottom: 20px;
 }
 
 p{
   color: white;
 }
 
-.quick-facts{
+.p2{
   color: white;
+  float: left;
 }
 
-.facts{
-  align-content: center;
+.container {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.band-members {
+    width: 30%;
+    height: 200px;
+    float: left;
+    color: white;
+}
+.hits {
+    margin-left: 15%;
+    height: 200px;
+    color:white;
+    float: left;
 }
 
 .about-image{
